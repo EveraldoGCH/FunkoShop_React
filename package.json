@@ -1,0 +1,8 @@
+{
+"scripts": {
+    "client":"cd funkoshop_react_front && npm start",
+    "back":"cd api && nodemon bin/www",
+    "start": "concurrently \"npm run back\" \"npm run client\""
+    
+  }
+}
