@@ -1,0 +1,29 @@
+/*FOOTER*/
+.inner-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-top: 4px;
+    background-color: #272727;
+}
+.inner-footer a{
+    font-size: 40px;
+    color: white;
+}
+
+.outer-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background-color: #3f3f3f;
+    bottom:0;
+}
+.logofooter{
+    width: 35vw;
+}
+/*TERMINA Footer*/
