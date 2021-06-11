@@ -393,7 +393,7 @@ h2{
 }
 @media (min-width:600px){
     header{
-        height: 29vh;
+        height: 21vh;
     }
     .editarproducto{
         text-align: center;
@@ -574,9 +574,6 @@ h2{
     }
     .fa-search{
         font-size: 3vw;
-    }
-header{
-    height: 31vh;
     }
 .imagenesheader{
     top: 9%;

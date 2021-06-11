@@ -12,8 +12,8 @@ lista: function(req, res){
         return res.json({
             total: productos.length,
             data: productos
-        });
-    })
+        })
+    });
         
 },
 productDetails: function(req, res){

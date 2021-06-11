@@ -1,8 +1,11 @@
 import React from 'react';
+import Header from "../header/header"
 
 let Users= function(){
-    return(
+    return(<>
+        <Header/>
         <h2>Soy Usuarios!!!!</h2>
+        </>
     )
 }
 

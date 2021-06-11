@@ -5,7 +5,7 @@ const db= require("../database/models")
 const Products = require("../database/models/products");
 
 
-router.get('/productlist', controllerProductos.lista)
-router.get('/productdetails/:id', controllerProductos.productDetails)
+router.get('/lista', controllerProductos.lista)
+router.get('/:id', controllerProductos.productDetails)
 
 module.exports=router

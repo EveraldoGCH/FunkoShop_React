@@ -1,8 +1,13 @@
 {
-"scripts": {
-    "client":"cd funkoshop_react_front && npm start",
-    "back":"cd api && nodemon bin/www",
-    "start": "concurrently \"npm run back\" \"npm run client\""
-    
-  }
+    "scripts": {
+        "client": "cd funkoshop_react_front && npm start",
+        "back": "cd api && nodemon bin/www",
+        "depend1":"cd funkoshop_react && npm install",
+        "depend2": "cd api && npm install",
+        "download": "concurrently \"npm run depend 1\" \"npm run depend2\"",
+        "start": "concurrently \"npm run back\" \"npm run client\""
+    },
+    "dependencies": {
+        "node-fetch": "^2.6.1"
+    }
 }
