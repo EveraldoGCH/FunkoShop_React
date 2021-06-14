@@ -14,19 +14,27 @@ class Productos extends Component{
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-          } })
-        .catch(console.log("no LLego JSON"))
+          }})
           .then(response => response.json())
-          .catch(console.log("error1 no hay un JSON"))
-          .then(data => this.setState({ data })
-          .catch(console.log("error2")));
-    }
+          .then(data => {
+              console.log(data.data)
+              data = data.data
+              this.setState({ data })
+            })
+          }
     render() {
         return(
             <>
-            console.log({this.state.data})
-            <Header/>
-            <p>porductoooooos todos</p>
+            <Header />
+        {this.state.data.map((producto) => (
+          <Producto
+            img={producto.image_product}
+            titulo={producto.name_product}
+            descripcion={producto.product_description}
+            precio={producto.price}
+            id={producto.id_product}
+          />
+        ))}
             </>
         )
     }}

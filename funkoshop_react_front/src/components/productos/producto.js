@@ -1,15 +1,18 @@
 import React from 'react';
-import Header from "../header/header"
+import { Link } from 'react-router-dom';
 
 function Producto(props){
 return (
 <>
-    <Header/>
-    <div className="divprecioimg">
-        <img src="/public/"{...props.img} alt={props.titulo}/>
-        <h4 className="nombreproducto">{props.titulo}</h4>
-        <p className="descripcionproducto">{props.descripcion}</p>
-        <p className="precioproducto">{props.precio}</p>
+    <div className="productos" key={props.id}>
+        <Link to={"/productsdetail/"+props.id}><article className="producto">
+        <img src={"/images/"+props.img} alt={props.titulo}/>
+        <div className="divprecioimg">
+           <h4 className="nombreproducto">{props.titulo}</h4>
+           <p className="descripcionproducto">{props.descripcion}</p>
+           <p className="precioproducto">precio:ARS$ {props.precio}</p>
+        </div>
+        </article></Link>
     </div>
 </>
 )}
