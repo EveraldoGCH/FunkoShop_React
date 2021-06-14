@@ -6,8 +6,10 @@ let Inicio = function(){
 return (
     <>
     <Header/>
-    <Link to="/products/"><h3>Productos</h3></Link>
-    <Link to="/users/"><h3>Usuarios</h3></Link>
+    <div className="flexinicio">
+    <Link to="/products/"><h3 className="inicioparrafo">Productos</h3></Link>
+    <Link to="/users/"><h3 className="inicioparrafo">Usuarios</h3></Link>
+    </div>
     </>
 )}
 

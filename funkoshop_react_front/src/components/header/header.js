@@ -7,7 +7,7 @@ return (
     <div id="content">
     <header>
       <div id="pruebaflex">
-      <Link to="/"><img className="logo" src="/images/LOGO2.png" alt='LOGO'/></Link>
+      <Link to="/"><img key="100" className="logo" src="/images/LOGO2.png" alt='LOGO'/></Link>
    </div>
          </header>
      </div>
